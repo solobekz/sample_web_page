@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>H--- Newzz</title>
+   <!--link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'/>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"-->
+   <link href="common/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap CSS -->
+   <link href="style.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper.min.css">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<body>
+ <div id="mySidenav" class="sidenav">
+  <div class="col-xs-12 sdbg">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div href="#" class="userx"><img src="images/me.jpg" class="img-circle"> Bekibele Solomon</div>
+  </div>
+  <div class="col-xs-12" style="">
+    <a href="#" class="menuitem"><img src="images/ic-dashboard.svg"> Dashboard</a>
+    <a href="#" class="menuitem"><img src="images/ic-accounts.svg"> Accounts</a>
+    <a href="#" class="menuitem"><img src="images/ic-cards.svg"> Cards</a>
+    <a href="#" class="menuitem"><img src="images/ic-payments.svg"> Payments</a>
+	<a href="#" class="menuitem"><img src="images/ic-transfers.svg"> Transfers</a>
+	<a href="#" class="menuitem"><img src="images/ic-airtime.svg"> Airtime</a>
+	<a href="#" class="menuitem"><img src="images/ic-settings.svg"> Settings</a>
+  </div>
+</div>
+
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  
+
+   <nav class="navbar navbar-default">
+	   <!-- Use any element to open the sidenav -->
+	 <div>
+		<button onclick="openNav()" style="border:0px;border-radius:5px;background:transparent;">
+								 <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+								
+			  
+				<span class="headng" style="text-align:center;"> Dashboard</span>
+	 </div>
+   </nav>
+    
+		<!-- Swiper -->
+		  <div class="swiper-container">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"> 
+				  <span style="font-size: 18px;">Balance </span><br>
+				  <span style="font-family:'ProximaNovaSoft-semibold';font-size: 32px;"> N979153.36 </span><br>
+				  <span style="font-family:'ProximaNovaSoft-semibold';font-size: 24px;">16.500 SP </span>
+			  </div>
+			  <div class="swiper-slide"><span style="font-family:'ProximaNovaSoft-semibold';font-size: 32px;"> ACCESS QUICK loans</span><br>
+			    <span style="font-family:'ProximaNovaSoft-semibold';font-size: 24px;">Try a fixed deposit account</span>
+			  </div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		  </div>
+
+		  <!-- Swiper JS -->
+		  <script src="swiper.min.js"></script>
+
+		  <!-- Initialize Swiper -->
+		  <script>
+			var swiper = new Swiper('.swiper-container', {
+			  pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			  },
+			});
+		  </script>
+		 
+		 
+          <div id='balance_page' style="font-family:'ProximaNovaSoft-medium';padding:10px;margin:0px;height:42px;background-color: #77439e;color:#fff;font-size: 14px;">Latest Transactions</div>
+
+      <!-- all transactions -->
+      <div id='item' class='all-trans'>
+           <div class='even row col-xs-12 col-md-4'>
+		     
+			 <div class='details1'>
+			     <div class='ifo'>ATM Lagos</div> <div class='date'>Today</div>
+			  </div>
+			  <div class='fgure'>
+			     <div class='amnt'>-N 450.00</div> <div class='prtal'>Bank Withdraw</div>
+			  </div>
+			    
+		   </div>
+		   <div class='odd row col-xs-12 col-md-4'>
+		     
+			 <div class='details0'>
+			     <div class='ifo'>ATM Lagos</div> <div class='date'>Yesterday</div>
+			  </div>
+			  <div class='fgure'>
+			     <div class='amnt'>+N 450.00</div> <div class='prtal'>Bank Withdraw</div>
+			  </div>
+			    
+		   </div>
+		   
+		   <div class='even row col-xs-12 col-md-4'>
+		     
+			 <div class='details1'>
+			     <div class='ifo'>003 645 6548 65</div> <div class='date'>01/06/2015</div>
+			  </div>
+			  <div class='fgure'>
+			     <div class='amnt'>-100 SP</div> <div class='prtal'>Airtime recharge</div>
+			  </div>
+			    
+		   </div>
+		   <div class='odd row col-xs-12 col-md-4'>
+		     
+			 <div class='details0'>
+			     <div class='ifo'>John doe</div> <div class='date'>31/05/2015</div>
+			  </div>
+			  <div class='fgure'>
+			     <div class='amnt'>+N 450.00</div> <div class='prtal'>Bank Withdraw</div>
+			  </div>
+			    
+		   </div>
+		   
+		     <div class='even row col-xs-12 col-md-4'>
+		     
+			 <div class='details1'>
+			     <div class='ifo'>003 645 6548 65</div> <div class='date'>30/05/2015</div>
+			  </div>
+			  <div class='fgure'>
+			     <div class='amnt'>-185 SP</div> <div class='prtal'>Airtime recharge</div>
+			  </div>
+			    
+		   </div>
+		   <div class='odd row col-xs-12 col-md-4'>
+		     
+			 <div class='details0'>
+			     <div class='ifo'>Central Bank</div> <div class='date'>15/03/2015</div>
+			  </div>
+			  <div class='fgure'>
+			     <div class='amnt'>+N 5050.00</div> <div class='prtal'>Accrued interests</div>
+			  </div>
+			    
+		   </div>
+		  
+		  
+      </div>
+   
+
+</div> 
+   <!-- JS -->
+   <!--script src="https://code.jquery.com/jquery-1.11.0.min.js"></script-->
+    <script src="common/js/jquery.min.js" async></script><!-- Load jquery -->
+	<script src="common/js/bootstrap.min.js" async></script><!-- Load bootstrap js -->
+	
+   <script src='app.js'></script>
+
+   
+</body>
+</html>

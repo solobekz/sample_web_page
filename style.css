@@ -1,0 +1,185 @@
+ /* common css */
+body {
+  font-family: 'ProximaNovaSoft-Regular', sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0 auto;	
+  transition: 1s;
+ 
+ position: relative;
+}
+ 
+ /*add fonts relatively*/
+ @font-face {
+    font-family: 'ProximaNovaSoft-Bold'; 
+	src: url('fonts/ProximaNovaSoft-Bold.otf');
+	font-weight: normal;
+	font-style: normal;
+ }
+ @font-face {
+    font-family: 'ProximaNovaSoft-Medium'; 
+	src: url('fonts/ProximaNovaSoft-Medium.otf');
+	font-weight: normal;
+	font-style: normal;
+ }
+ @font-face {
+    font-family: 'ProximaNovaSoft-Regular'; 
+	src: url('fonts/ProximaNovaSoft-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+ }
+ @font-face {
+    font-family: 'ProximaNovaSoft-semibold'; 
+	src: url('fonts/ProximaNovaSoft-semibold.otf');
+	font-weight: normal;
+	font-style: normal;
+ }
+ 
+ .navbar  {
+	font-family: 'ProximaNovaSoft-Regular';
+	background-color: #77439e;
+	margin-bottom: 0px;
+	padding:10px;
+	font-size: 20px !important;
+	color: #fff;
+	border:0px;  
+}
+ 
+ /* The side navigation menu */
+.sidenav {
+	font-family: 'ProximaNovaSoft-Regular';
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fff;  
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 0px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: -10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #8d52ba;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #8d52ba;
+	background-color: #f7f0fc;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) and general responsiveness*/
+@media screen and (max-width: 767px) {
+    .sidenav {padding-top: 0px;}
+    .sidenav a {font-size: 18px;}
+	.headng {margin-left:20%;}
+} 
+@media screen and (min-width: 767px) {
+    .headng {margin-left:43%;}
+} 
+
+/*menu text settngs*/
+.sdbg {
+	height: 153px;
+	background-image: url("images/bg.png");
+}
+.menuitem {
+	height: 55px;
+}
+.menuitem>img {
+	height: 30px;
+	width: 30px;
+}
+.userx  {
+	padding-left: 15px;
+	margin-top: 80px;
+	 font-size: 18px;
+    color: #fff;
+}
+.userx>img {
+	height: 50px;
+	width: 50px;
+	 
+}
+/*swiper*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: #77439e;
+	opacity:0.8;
+    margin: 0px;
+	border:0px;  
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+	
+	color: #fff;
+    margin:30px 0px 30px 0px;  
+}
+
+.even, .odd {
+	color: #959595;
+	padding: 4px;
+	margin: 0px;
+	height: 65px;
+	font-family: 'ProximaNovaSoft-Bold'; 
+	font-size: 16px;
+}
+.details1, .details0 {
+	width:150px;
+	float:left;
+}
+.date {
+	opacity:0.6;
+	font-size: 14px;
+}
+.prtal { 
+	padding: 0px;
+    float:right;
+	font-size: 14px;
+}
+.amnt { 
+    float:right;
+}
+.even .amnt { 
+    color: #e44235; 
+}
+.odd .amnt { 
+    color: #16967a; 
+}
+.odd {
+	background-color: #f1f1f1;
+}
+.fgure {
+	float:left;
+	text-align: right;
+	width: 110px;
+}
